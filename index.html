@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thanksgiving Recipe Collection</title>
+</head>
+<body>
+    <div class="form-container">
+        <h1>Collecting Thanksgiving Recipes</h1>
+        <form id="recipeForm">
+            <label for="email">Your email:</label>
+            <input type="email" id="email" name="email" required><br><br>
+
+            <label for="date">Today's date:</label>
+            <input type="date" id="date" name="date" required><br><br>
+
+            <label for="recipeName">Recipe Name:</label>
+            <input type="text" id="recipeName" name="recipeName" required><br><br>
+
+            <p>What ingredients are in your recipe?</p>
+            <input type="checkbox" id="fruit" name="ingredients" value="Fruit">
+            <label for="fruit">Fruit</label><br>
+            
+            <input type="checkbox" id="vegetables" name="ingredients" value="Vegetables">
+            <label for="vegetables">Vegetables</label><br>
+            
+            <input type="checkbox" id="grains" name="ingredients" value="Grains">
+            <label for="grains">Grains</label><br>
+            
+            <input type="checkbox" id="dairy" name="ingredients" value="Dairy">
+            <label for="dairy">Dairy</label><br><br>
+
+            <label for="recipeType">What type of recipe is this?</label>
+            <select id="recipeType" name="recipeType">
+                <option value="Appetizer">Appetizer</option>
+                <option value="Main Course">Main Course</option>
+                <option value="Dessert">Dessert</option>
+                <option value="Side Dish">Side Dish</option>
+            </select><br><br>
+
+            <button type="button" onclick="submitForm()">Send Your Recipe To Us</button>
+        </form>
+    </div>
+    
+    <script src="JS/index.js"></script>
+</body>
+</html>
